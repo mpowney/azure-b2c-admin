@@ -1,0 +1,26 @@
+{
+  "name": "azure-b2c-admin",
+  "version": "1.0.0",
+  "description": "Azure Active Directory B2C Admin User Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpowney/azure-b2c-admin.git"
+  },
+  "keywords": [
+    "azure",
+    "active",
+    "directory",
+    "aad",
+    "b2c"
+  ],
+  "author": "Mark Powney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpowney/azure-b2c-admin/issues"
+  },
+  "homepage": "https://github.com/mpowney/azure-b2c-admin#readme"
+}
