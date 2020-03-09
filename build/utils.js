@@ -8,7 +8,7 @@ const createNotifierCallback = () => {
         const filename = error.file && error.file.split("!").pop();
 
         notifier.notify({
-            title: 'lowrez-music-finder', /* packageConfig.name, */
+            title: 'azure-b2c-admin', /* packageConfig.name, */
             message: severity + ": " + error.name,
             subtitle: filename || "",
             icon: 'alert.png' /*path.join(__dirname, "alert.png") */
