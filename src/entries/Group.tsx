@@ -2,22 +2,22 @@ import * as React from "react";
 import DocumentMeta from "react-document-meta";
 import Navigation from "components/Navigation";
 
-const styles = require("styles/entries/Home.less");
+const styles = require("styles/entries/Group.less");
 const meta = {
-    title: "Home",
+    title: "Group",
     description: "",
     meta: {
         charset: "utf-8",
         name: {
-            keywords: "Home"
+            keywords: "Group"
         }
     }
 };
 
-interface HomeProps {}
-interface HomeState {}
+interface IGroupProps {}
+interface IGroupState {}
 
-export default class HomeEntry extends React.Component<HomeProps, HomeState> {
+export default class GroupEntry extends React.Component<IGroupProps, IGroupState> {
     static STORE_CLASSES = [];
 
     constructor(props) {
@@ -28,9 +28,9 @@ export default class HomeEntry extends React.Component<HomeProps, HomeState> {
         return (
             <>
                 <Navigation />
-                <div className={styles.home}>
+                <div className={styles.group}>
                     <DocumentMeta {...meta} />
-                    Welcome
+                    Group
                 </div>
             </>
         );

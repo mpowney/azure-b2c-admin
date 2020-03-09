@@ -2,22 +2,25 @@ import * as React from "react";
 import DocumentMeta from "react-document-meta";
 import Navigation from "components/Navigation";
 
-const styles = require("styles/entries/Home.less");
+const styles = require("styles/entries/DeletedGroups.less");
 const meta = {
-    title: "Home",
+    title: "Deleted Groups",
     description: "",
     meta: {
         charset: "utf-8",
         name: {
-            keywords: "Home"
+            keywords: "Deleted Groups"
         }
     }
 };
 
-interface HomeProps {}
-interface HomeState {}
+interface IDeletedGroupsProps {}
+interface IDeletedGroupsState {}
 
-export default class HomeEntry extends React.Component<HomeProps, HomeState> {
+export default class DeletedGroupsEntry extends React.Component<
+    IDeletedGroupsProps,
+    IDeletedGroupsState
+> {
     static STORE_CLASSES = [];
 
     constructor(props) {
@@ -28,9 +31,9 @@ export default class HomeEntry extends React.Component<HomeProps, HomeState> {
         return (
             <>
                 <Navigation />
-                <div className={styles.home}>
+                <div className={styles.deletedGroups}>
                     <DocumentMeta {...meta} />
-                    Welcome
+                    Deleted Groups
                 </div>
             </>
         );

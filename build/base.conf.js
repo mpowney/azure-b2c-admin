@@ -96,6 +96,7 @@ module.exports = {
     resolve: {
         extensions: [".json", ".js", ".jsx", ".ts", ".tsx", ".css", ".less"],
         alias: {
+            common: path.resolve(__dirname, "../src/common/"),
             images: path.resolve(__dirname, "../src/assets/images/"),
             styles: path.resolve(__dirname, "../src/assets/styles"),
             fonts: path.resolve(__dirname, "../src/assets/fonts")

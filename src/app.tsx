@@ -13,6 +13,8 @@ require("common/polyfill");
 require("styles/global.less");
 require("office-ui-fabric-core/dist/css/fabric.min.css");
 
+const styles = require("styles/app.less");
+
 export const PACKAGE_NAME = "Application Name";
 export const Routes = routes;
 
@@ -50,7 +52,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
         };
 
         return (
-            <div id={`appContainer`}>
+            <div id={`appContainer`} className={styles.appContainer}>
                 <BrowserRouter location={location}>
                     <Switch>
                         {routes.map((route: any, index) =>

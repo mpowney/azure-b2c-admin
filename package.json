@@ -22,7 +22,7 @@
     },
     "lint-staged": {
         "src/**/*.{ts,tsx}": [
-            "lint-staged:format",
+            // "lint-staged:format",
             "lint-staged:ts",
             "git add"
         ],

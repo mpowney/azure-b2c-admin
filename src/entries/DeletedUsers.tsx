@@ -2,22 +2,25 @@ import * as React from "react";
 import DocumentMeta from "react-document-meta";
 import Navigation from "components/Navigation";
 
-const styles = require("styles/entries/Home.less");
+const styles = require("styles/entries/DeletedUsers.less");
 const meta = {
-    title: "Home",
+    title: "Deleted Users",
     description: "",
     meta: {
         charset: "utf-8",
         name: {
-            keywords: "Home"
+            keywords: "Deleted Users"
         }
     }
 };
 
-interface HomeProps {}
-interface HomeState {}
+interface IDeletedUsersProps {}
+interface IDeletedUsersState {}
 
-export default class HomeEntry extends React.Component<HomeProps, HomeState> {
+export default class DeletedUsersEntry extends React.Component<
+    IDeletedUsersProps,
+    IDeletedUsersState
+> {
     static STORE_CLASSES = [];
 
     constructor(props) {
@@ -28,9 +31,9 @@ export default class HomeEntry extends React.Component<HomeProps, HomeState> {
         return (
             <>
                 <Navigation />
-                <div className={styles.home}>
+                <div className={styles.deletedUsers}>
                     <DocumentMeta {...meta} />
-                    Welcome
+                    Deleted Users
                 </div>
             </>
         );
