@@ -33,6 +33,7 @@
     },
     "pre-commit": "lint-staged",
     "devDependencies": {
+        "@microsoft/microsoft-graph-types": "^1.12.0",
         "@types/node": "^9.4.6",
         "@types/react": "^16.9.5",
         "assets-webpack-plugin": "^3.5.1",
